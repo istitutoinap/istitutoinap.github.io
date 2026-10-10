@@ -1,10 +1,22 @@
+import type { Metadata } from "next";
 import ContactSection from "../contact-section";
 import SiteFooter from "../site-footer";
 import SiteHeader from "../site-header";
 
-export const metadata = {
-  title: "Associazione INAP | INAP",
+export const metadata: Metadata = {
+  title: "Associazione INAP",
   description: "Attività, eventi e documenti pubblici dell’Associazione INAP.",
+  alternates: {
+    canonical: "/associazione/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "it_IT",
+    url: "/associazione/",
+    siteName: "INAP",
+    title: "Associazione INAP | INAP",
+    description: "Attività, eventi e documenti pubblici dell’Associazione INAP.",
+  },
 };
 
 const activities = [
