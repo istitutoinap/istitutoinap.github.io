@@ -1,10 +1,22 @@
+import type { Metadata } from "next";
 import ContactSection from "../contact-section";
 import SiteFooter from "../site-footer";
 import SiteHeader from "../site-header";
 
-export const metadata = {
-  title: "Neuroscienze applicate e neuromodulazione | INAP",
+export const metadata: Metadata = {
+  title: "Neuroscienze applicate e neuromodulazione",
   description: "Ricerca, formazione e sviluppo di servizi clinici di neuromodulazione mediante stimolazione magnetica transcranica.",
+  alternates: {
+    canonical: "/neuromodulazione/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "it_IT",
+    url: "/neuromodulazione/",
+    siteName: "INAP",
+    title: "Neuroscienze applicate e neuromodulazione | INAP",
+    description: "Ricerca, formazione e sviluppo di servizi clinici di neuromodulazione mediante stimolazione magnetica transcranica.",
+  },
 };
 
 const applications = [
