@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import ContactSection from "./contact-section";
 import SiteFooter from "./site-footer";
 import SiteHeader from "./site-header";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const focusAreas = [
   ["Neuroscienze applicate e neuromodulazione", "Formazione sui principi, le tecniche e le applicazioni delle neuroscienze e della stimolazione cerebrale non invasiva."],
